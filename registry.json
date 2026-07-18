@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-18T09:05:00Z",
+  "updated_at": "2026-07-18T09:48:00Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -12,6 +12,10 @@
       "official": true,
       "min_app_version": "0.1.64",
       "download_url": "https://github.com/hlok666/primify-plugins/releases/download/v1.0.1/primify-sequence-blast-1.0.1.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/v1.0.1/primify-sequence-blast-1.0.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/v1.0.1/primify-sequence-blast-1.0.1.primify-plugin"
+      ],
       "sha256": "dfee04ee67087d658f81319388ec438c8eeef7d8bf4d8622cce89a8a778a0b61",
       "size": 1530,
       "published_at": "2026-07-18",
@@ -27,6 +31,10 @@
       "official": true,
       "min_app_version": "0.1.65",
       "download_url": "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.0.0/primify-corehunter-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.0.0/primify-corehunter-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/corehunter-v1.0.0/primify-corehunter-1.0.0.primify-plugin"
+      ],
       "sha256": "039958a4a09e618594a90986a99527469da53fe9fa6faa711a41590ffc4018f2",
       "size": 444994,
       "published_at": "2026-07-18",

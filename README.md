@@ -1,5 +1,7 @@
 # Primify Plugins
 
+Primify loads this public catalog from a primary source and a Gitee backup. Every plugin package is accepted only after its declared file size and SHA-256 digest are verified.
+
 Official public plugin registry for Primify desktop.
 
 Primify reads `registry.json`, verifies the package size and SHA-256 digest, then validates the plugin manifest before installation. Plugin packages are published as GitHub release assets.
