@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-18T18:00:00Z",
+  "updated_at": "2026-07-18T20:30:00Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -24,21 +24,21 @@
     {
       "id": "primify.corehunter",
       "name": "核心种质筛选",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "Primify",
-      "description": "使用官方 Core Hunter 3 的 CV、HE、SH、EN、AN、EE 六类目标和 MR/CE 遗传距离筛选核心种质。",
+      "description": "自动粗扫候选规模，再使用官方 Core Hunter 3 对推荐规模进行精细复核与稳定性评价。",
       "category": "群体遗传",
       "official": true,
-      "min_app_version": "0.1.67",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.1.0/primify-corehunter-1.1.0.primify-plugin",
+      "min_app_version": "0.1.69",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.2.0/primify-corehunter-1.2.0.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.1.0/primify-corehunter-1.1.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/corehunter-v1.1.0/primify-corehunter-1.1.0.primify-plugin"
+        "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.2.0/primify-corehunter-1.2.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/corehunter-v1.2.0/primify-corehunter-1.2.0.primify-plugin"
       ],
-      "sha256": "633670933452e9aa0ec7775d91c0608e1c5bc05b4b4d2ab70cf27f3263c62ec6",
-      "size": 447884,
+      "sha256": "d8de1dac40e69a2388e4f77d76812c5ec69daef0faf525b3b4408ecaf2a79423",
+      "size": 452666,
       "published_at": "2026-07-19",
-      "release_notes": "补齐 CV、HE、SH、EN、AN、EE 六类官方目标，增加 MR/CE 遗传距离、六指标加权、正确的 AN 最小化逻辑及完整 Excel 报告。"
+      "release_notes": "改为快速粗扫后单规模精细复核，采用官方时间与无改进停止条件；增加真实进度、页面切换续跑、进程树取消、重复筛选稳定性及增强 Excel 报告。"
     }
   ]
 }

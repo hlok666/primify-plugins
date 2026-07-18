@@ -50,9 +50,14 @@ process.stdin.on("end", () => {
       "weight-en": value(input, "weight_en", 0),
       "weight-an": value(input, "weight_an", 0),
       "weight-ee": value(input, "weight_ee", 0),
-      "search-mode": value(input, "search_mode", "fast"),
-      "max-steps": value(input, "max_steps", 5000),
-      replicates: value(input, "replicates", 1),
+      "search-mode": value(input, "search_mode", "auto"),
+      "max-steps": value(input, "max_steps", -1),
+      "fast-time-limit": value(input, "fast_time_limit", 12),
+      "fast-improvement-time": value(input, "fast_improvement_time", 2),
+      "accurate-time-limit": value(input, "accurate_time_limit", 60),
+      "accurate-improvement-time": value(input, "accurate_improvement_time", 10),
+      replicates: value(input, "replicates", 3),
+      "scan-replicates": value(input, "scan_replicates", 1),
       seed: value(input, "seed", 42),
       "always-selected": value(input, "always_selected"),
       "never-selected": value(input, "never_selected"),
@@ -62,13 +67,32 @@ process.stdin.on("end", () => {
     javaChild = spawn(javaCommand, args, { cwd: __dirname, windowsHide: true, stdio: ["ignore", "pipe", "pipe"] });
     let stdout = "";
     let stderr = "";
+    let stderrPending = "";
+    const consumeStderr = (flush = false) => {
+      const lines = stderrPending.split(/\r?\n/);
+      stderrPending = flush ? "" : lines.pop() || "";
+      for (const line of lines) {
+        if (!line) continue;
+        if (line.startsWith("@@PRIMIFY_PROGRESS@@")) process.stderr.write(`${line}\n`);
+        else stderr += `${line}\n`;
+      }
+      if (flush && stderrPending) {
+        if (stderrPending.startsWith("@@PRIMIFY_PROGRESS@@")) process.stderr.write(`${stderrPending}\n`);
+        else stderr += stderrPending;
+        stderrPending = "";
+      }
+    };
     javaChild.stdout.on("data", (chunk) => { stdout += chunk.toString("utf8"); });
-    javaChild.stderr.on("data", (chunk) => { stderr += chunk.toString("utf8"); });
+    javaChild.stderr.on("data", (chunk) => {
+      stderrPending += chunk.toString("utf8");
+      consumeStderr(false);
+    });
     javaChild.on("error", (error) => {
       process.stderr.write(`${error.message}\n`);
       process.exitCode = 1;
     });
     javaChild.on("exit", (code) => {
+      consumeStderr(true);
       javaChild = null;
       if (code !== 0) {
         process.stderr.write(`${stderr.trim() || `Core Hunter 退出码 ${code}`}\n`);
