@@ -25,7 +25,7 @@
       "description": "使用官方 Core Hunter 3 在本机扫描核心比例并优化 CV、HE、SH 或加权多目标。",
       "category": "群体遗传",
       "official": true,
-      "min_app_version": "0.1.64",
+      "min_app_version": "0.1.65",
       "download_url": "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.0.0/primify-corehunter-1.0.0.primify-plugin",
       "sha256": "cb423143a55828a34423423a882e2638f2ed13bce1adbdb8f48447d61fc6273d",
       "size": 444994,
