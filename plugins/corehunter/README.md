@@ -1,11 +1,62 @@
-# Core Hunter Core Collection
+# Primify Core Hunter 插件
 
-Official Primify integration for Core Hunter 3.2.0. It scans or fixes core collection size and optimizes allele coverage (CV), expected heterozygosity (HE), Shannon diversity (SH), or a normalized weighted objective.
+## 功能边界
 
-The plugin uses Primify's bundled Java runtime. R, rJava, and a system Java installation are not required. Genotype files and results remain on the user's computer.
+该插件调用官方 Core Hunter 3.2.0 Java 引擎，从基因型标记数据中筛选多样、代表性且低冗余的核心种质集合。分析仅在本机执行，不上传原始基因型数据。
 
-Supported input formats are Core Hunter `default`, `biparental`, and `frequency` CSV/TXT files. The result includes a rate scan, an automatic starting-point recommendation, selected accession IDs, constraints, and an Excel report.
+支持三种官方基因型格式：
 
-Core Hunter is licensed under Apache License 2.0. See `THIRD_PARTY_NOTICE.txt`.
+- `default`：一般等位基因/SSR 数据；同一标记的等位列使用相同前缀，例如 `mk1.a`、`mk1.b`。
+- `biparental`：双等位标记的 `0/1/2` 编码。
+- `frequency`：按等位基因频率输入。
 
-Requires Primify 0.1.65 or newer.
+输入文件使用 `.csv` 或制表符分隔的 `.txt`。第一列必须是唯一材料 ID。格式细节以 Core Hunter 官方说明为准：<https://www.corehunter.org/data>。
+
+## 优化目标
+
+- `CV`：等位基因覆盖度，适合优先保留原始群体中的等位基因丰富度。
+- `HE`：期望杂合度。
+- `SH`：Shannon 多样性指数，兼顾丰富度和频率均匀性。
+- `EN`：核心材料到最近核心材料的平均距离，最大化时降低核心集内部冗余。
+- `AN`：原群体材料到最近核心材料的平均距离，最小化时提高核心集对完整群体的代表性。
+- `EE`：核心材料之间的平均成对距离，最大化时提高总体遗传分散度。
+- `综合`：按正确方向归一化六类目标后进行加权联合优化，其中 AN 按越小越好处理。
+
+SSR、一般等位、双等位和频率型基因数据可选择两种官方遗传距离：
+
+- `MR`：Modified Rogers distance，默认值，适合一般分子标记核心集筛选。
+- `CE`：Cavalli-Sforza–Edwards distance，可用于比较不同距离定义下结果的稳健性。
+
+Gower 距离需要表型性状数据，预计算距离需要距离矩阵；这两类输入与当前基因型文件不是同一数据模型，因此不会在基因型模式中错误开放。
+
+插件会对每个核心比例分别运行优化，并对得到的核心集重新计算 CV、HE、SH、EN、AN 和 EE。原脚本中的 `21%` 不是通用阈值，因此不再写死：
+
+- CV 模式选择首个达到本次扫描近似最高覆盖度的比例。
+- HE/SH/EN/EE/综合模式选择首个达到本次扫描近似最优值的比例。
+- AN 模式选择首个达到近似最小代表性距离的比例。
+- 用户可在扫描表中选择任意比例并导出对应核心材料。
+
+自动建议仅用于缩小决策范围，最终比例仍应结合保存成本、育种目标、地理来源和表型信息复核。
+
+## 运行环境
+
+Primify 安装包包含 JRE、官方 `corehunter-base-3.2.0-shaded.jar` 和编译后的插件适配器。用户不需要安装 R、`rJava` 或系统 Java。插件使用 Apache License 2.0 的官方 Core Hunter 依赖，第三方声明随插件分发。
+
+## 可重复性和约束
+
+- `随机种子`用于重复得到相同搜索起点。
+- `重复运行`会使用不同派生种子并保留目标表现最好的核心集。
+- `必须保留`可锁定关键材料。
+- `排除`可过滤失活、重复或不可用材料。
+- 精细模式使用更多搜索步数，适合最终报告；快速模式适合比例扫描。
+
+## 导出
+
+Excel 报告包括：分析概览、六类指标的完整比例扫描、当前核心材料、材料约束和完整 JSON 结果。报告保留距离方法、目标权重、Core Hunter 版本、随机种子、搜索强度和运行耗时，便于复现。
+
+## 官方依据
+
+- Core Hunter 官网：<https://www.corehunter.org/>
+- Core Hunter 3 源码：<https://github.com/corehunter/corehunter3>
+- R 接口与参数说明：<https://www.corehunter.org/r>
+- 评价指标说明：<https://www.corehunter.org/measures>
