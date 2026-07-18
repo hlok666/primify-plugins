@@ -8,4 +8,4 @@ Supported input formats are Core Hunter `default`, `biparental`, and `frequency`
 
 Core Hunter is licensed under Apache License 2.0. See `THIRD_PARTY_NOTICE.txt`.
 
-Requires Primify 0.1.64 or newer.
+Requires Primify 0.1.65 or newer.
