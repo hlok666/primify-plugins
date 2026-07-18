@@ -1,0 +1,42 @@
+{
+  "id": "primify.sequence-blast",
+  "name": "序列同源检索",
+  "version": "1.0.1",
+  "author": "Primify",
+  "description": "在一个或多个本地参考基因组中检索序列，映射基因、转录本和基因组位置。",
+  "enabled": true,
+  "runner": {
+    "type": "node",
+    "script": "index.cjs"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "id": "search",
+        "title": "运行序列同源检索",
+        "description": "调用 Primify 本地 BLAST+ 与参考基因组索引。",
+        "inputs": [
+          {
+            "id": "sequence",
+            "label": "查询序列",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "id": "reference_ids",
+            "label": "参考基因组 ID",
+            "type": "text",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "views": [
+      {
+        "id": "sequence-blast",
+        "title": "序列同源检索",
+        "command": "search"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "updated_at": "2026-07-18T00:00:00Z",
+  "plugins": [
+    {
+      "id": "primify.sequence-blast",
+      "name": "序列同源检索",
+      "version": "1.0.1",
+      "author": "Primify",
+      "description": "在一个或多个本地参考基因组中检索序列，映射基因、转录本和基因组位置。",
+      "category": "序列分析",
+      "official": true,
+      "min_app_version": "0.1.64",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/v1.0.1/primify-sequence-blast-1.0.1.primify-plugin",
+      "sha256": "dfee04ee67087d658f81319388ec438c8eeef7d8bf4d8622cce89a8a778a0b61",
+      "size": 1530,
+      "published_at": "2026-07-18",
+      "release_notes": "首次公开发布。支持多参考基因组并行 BLAST、基因与转录本注释、基因组坐标、序列比对图和正式报告。"
+    }
+  ]
+}
