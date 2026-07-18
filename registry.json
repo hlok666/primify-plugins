@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-18T00:00:00Z",
+  "updated_at": "2026-07-18T09:05:00Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -16,6 +16,21 @@
       "size": 1530,
       "published_at": "2026-07-18",
       "release_notes": "首次公开发布。支持多参考基因组并行 BLAST、基因与转录本注释、基因组坐标、序列比对图和正式报告。"
+    },
+    {
+      "id": "primify.corehunter",
+      "name": "核心种质筛选",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "使用官方 Core Hunter 3 在本机扫描核心比例并优化 CV、HE、SH 或加权多目标。",
+      "category": "群体遗传",
+      "official": true,
+      "min_app_version": "0.1.64",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/corehunter-v1.0.0/primify-corehunter-1.0.0.primify-plugin",
+      "sha256": "cb423143a55828a34423423a882e2638f2ed13bce1adbdb8f48447d61fc6273d",
+      "size": 444994,
+      "published_at": "2026-07-18",
+      "release_notes": "首次公开发布。内置官方 Core Hunter 3.2.0，支持比例扫描、固定比例/数量、CV/HE/SH/加权目标、材料约束、重复搜索和 Excel 报告。"
     }
   ]
 }

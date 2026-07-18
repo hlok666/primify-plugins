@@ -1,0 +1,28 @@
+{
+  "id": "primify.corehunter",
+  "name": "核心种质筛选",
+  "version": "1.0.0",
+  "author": "Primify",
+  "description": "使用官方 Core Hunter 3 在本机筛选多样、代表性且低冗余的核心种质集合。",
+  "enabled": true,
+  "runner": {
+    "type": "node",
+    "script": "index.cjs"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "id": "select-core",
+        "title": "筛选核心种质",
+        "description": "扫描或指定核心集大小，优化等位基因覆盖度、期望杂合度、Shannon 指数或加权组合。"
+      }
+    ],
+    "views": [
+      {
+        "id": "corehunter",
+        "title": "核心种质筛选",
+        "command": "select-core"
+      }
+    ]
+  }
+}

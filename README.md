@@ -7,6 +7,7 @@ Primify reads `registry.json`, verifies the package size and SHA-256 digest, the
 ## Available plugins
 
 - Sequence Homology Search: multi-reference local BLAST search with gene, transcript, coordinate, alignment, visualization, and report output.
+- Core Hunter Core Collection: local CV/HE/SH core germplasm optimization with rate scanning, constraints, and Excel reports.
 
 ## Security
 
