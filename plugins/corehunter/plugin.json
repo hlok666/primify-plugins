@@ -1,7 +1,7 @@
 {
   "id": "primify.corehunter",
   "name": "核心种质筛选",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Primify",
   "description": "使用官方 Core Hunter 3 自动粗扫候选规模，并对推荐规模进行精细复核与稳定性评价。",
   "enabled": true,
