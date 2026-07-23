@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-20T03:30:00Z",
+  "updated_at": "2026-07-23T06:30:00Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -39,6 +39,82 @@
       "size": 452686,
       "published_at": "2026-07-20",
       "release_notes": "默认按 1% 步长扫描；自动模式会精细复核粗扫推荐点及前两个较小规模，避免随机粗扫漏掉更小的满覆盖核心集。"
+    },
+    {
+      "id": "primify.chromatogram",
+      "name": "测序峰图查看器",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "读取 ABI/AB1 测序结果或压缩包，显示四通道峰图、碱基、质量值并导出序列。",
+      "category": "测序分析",
+      "official": true,
+      "min_app_version": "0.1.76",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin"
+      ],
+      "sha256": "c24c2f3fa0c6b524a3429530ac5218cbe5123d48a142a8291dd03469e5017890",
+      "size": 5687,
+      "published_at": "2026-07-23",
+      "release_notes": "支持 ABI/AB1 批量读取、四通道峰图、碱基与质量显示、有效区间和 FASTA 导出。"
+    },
+    {
+      "id": "primify.fasta-merge",
+      "name": "FASTA 合并与命名",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "批量读取 FASTA 或压缩包，检查序列名称，批量重命名并导出合并文件。",
+      "category": "序列工具",
+      "official": true,
+      "min_app_version": "0.1.76",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin"
+      ],
+      "sha256": "b44c495ae42540bbf73f35e5623a6f24090b7a40e4c18a55f173a85e99400956",
+      "size": 5158,
+      "published_at": "2026-07-23",
+      "release_notes": "支持批量 FASTA 与压缩包导入、序列筛选、逐条或批量重命名、预览和合并导出。"
+    },
+    {
+      "id": "primify.multiple-alignment",
+      "name": "多序列比对与绘图",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "使用 ClustalW 2.1 完成多序列比对，并通过 pyMSAviz 实时生成可配置的比对图。",
+      "category": "序列分析",
+      "official": true,
+      "min_app_version": "0.1.76",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin"
+      ],
+      "sha256": "8ae679192432347f0a1c9072fb2aaf540702437a96bbd36987690abe945130df",
+      "size": 41676453,
+      "published_at": "2026-07-23",
+      "release_notes": "内置 ClustalW 2.1 与 pyMSAviz 运行组件，支持多序列比对、实时参数预览和结果导出。"
+    },
+    {
+      "id": "primify.superdecode-adapter",
+      "name": "SuperDecode 测序解码",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "连接用户已有的 SuperDecode 安装，启动官方 Windows 界面或通过 WSL 运行 DSDecode、HiDecode 与 LaDecode。",
+      "category": "测序分析",
+      "official": true,
+      "min_app_version": "0.1.76",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin"
+      ],
+      "sha256": "baa2f0cef617be98e9533522d13fba46111ca053bb378eb5c9a1ef2738e5f9f1",
+      "size": 4660,
+      "published_at": "2026-07-23",
+      "release_notes": "连接用户已有的 SuperDecode 安装，支持官方界面启动及 DSDecode、HiDecode、LaDecode 命令流程。"
     }
   ]
 }
