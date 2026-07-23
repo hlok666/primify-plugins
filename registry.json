@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-23T06:30:00Z",
+  "updated_at": "2026-07-23T09:07:32Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -100,21 +100,21 @@
     {
       "id": "primify.superdecode-adapter",
       "name": "SuperDecode 测序解码",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": "Primify",
-      "description": "连接用户已有的 SuperDecode 安装，启动官方 Windows 界面或通过 WSL 运行 DSDecode、HiDecode 与 LaDecode。",
+      "description": "一键安装并启动 SuperDecode Windows 版，也可通过 WSL 运行 DSDecode、HiDecode 与 LaDecode 命令流程。",
       "category": "测序分析",
       "official": true,
-      "min_app_version": "0.1.76",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin",
+      "min_app_version": "0.1.77",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/superdecode-adapter-v1.0.0/primify-superdecode-adapter-1.0.0.primify-plugin"
+        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin"
       ],
-      "sha256": "baa2f0cef617be98e9533522d13fba46111ca053bb378eb5c9a1ef2738e5f9f1",
-      "size": 4660,
+      "sha256": "1638e336c6df7ca175261432f1199a684ad7f12b812a6d9674cd1711c98ed98e",
+      "size": 46654,
       "published_at": "2026-07-23",
-      "release_notes": "连接用户已有的 SuperDecode 安装，支持官方界面启动及 DSDecode、HiDecode、LaDecode 命令流程。"
+      "release_notes": "新增 Windows 一键安装、断点续传、固定哈希校验和自动配置；安装后可直接启动官方界面，WSL 命令流程继续作为高级模式。"
     }
   ]
 }

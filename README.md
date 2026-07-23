@@ -13,7 +13,7 @@ Primify reads `registry.json`, verifies the package size and SHA-256 digest, the
 - FASTA Merge: batch FASTA/archive import, sequence renaming, preview, and merged export.
 - Chromatogram Viewer: ABI/AB1 trace, base call, quality, trimming, and FASTA export.
 - Multiple Alignment: bundled ClustalW 2.1 alignment with configurable pyMSAviz rendering.
-- SuperDecode Adapter: connects to an existing SuperDecode installation without redistributing its binaries.
+- SuperDecode Adapter: installs the official Windows release from the upstream source on demand, verifies its fixed size and SHA-256 digest, and can also connect to an existing installation. Primify does not redistribute the upstream binary.
 
 ## Security
 
