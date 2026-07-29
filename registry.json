@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-23T09:07:32Z",
+  "updated_at": "2026-07-29T05:13:09Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -81,21 +81,21 @@
     {
       "id": "primify.multiple-alignment",
       "name": "多序列比对与绘图",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Primify",
       "description": "使用 ClustalW 2.1 完成多序列比对，并通过 pyMSAviz 实时生成可配置的比对图。",
       "category": "序列分析",
       "official": true,
-      "min_app_version": "0.1.76",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin",
+      "min_app_version": "0.1.79",
+      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.0.0/primify-multiple-alignment-1.0.0.primify-plugin"
+        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin"
       ],
-      "sha256": "8ae679192432347f0a1c9072fb2aaf540702437a96bbd36987690abe945130df",
-      "size": 41676453,
-      "published_at": "2026-07-23",
-      "release_notes": "内置 ClustalW 2.1 与 pyMSAviz 运行组件，支持多序列比对、实时参数预览和结果导出。"
+      "sha256": "110092c146867a477cf37ee84dfaff21166e9d9d651ddd27edd32c0a7e6ec6ec",
+      "size": 41675694,
+      "published_at": "2026-07-29",
+      "release_notes": "修复正式包运行组件校验；内置 ClustalW 2.1 与 pyMSAviz，支持多序列比对、实时参数预览和结果导出。"
     },
     {
       "id": "primify.superdecode-adapter",
