@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-29T05:13:09Z",
+  "updated_at": "2026-07-30T02:12:50Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -81,40 +81,41 @@
     {
       "id": "primify.multiple-alignment",
       "name": "多序列比对与绘图",
-      "version": "1.0.1",
+      "version": "1.2.0",
       "author": "Primify",
       "description": "使用 ClustalW 2.1 完成多序列比对，并通过 pyMSAviz 实时生成可配置的比对图。",
       "category": "序列分析",
       "official": true,
-      "min_app_version": "0.1.79",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin",
+      "min_app_version": "0.1.81",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.0.1/primify-multiple-alignment-1.0.1.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin"
       ],
-      "sha256": "110092c146867a477cf37ee84dfaff21166e9d9d651ddd27edd32c0a7e6ec6ec",
-      "size": 41675694,
+      "sha256": "b76692a0ed8a271b00d034bd1acbe6574d2c39b4b47a501ebd97eed7d76b9838",
+      "size": 44290180,
       "published_at": "2026-07-29",
-      "release_notes": "修复正式包运行组件校验；内置 ClustalW 2.1 与 pyMSAviz，支持多序列比对、实时参数预览和结果导出。"
+      "release_notes": "完整支持 DNA/RNA 与氨基酸比对；压缩包可展开后逐条选择序列，并保留 ClustalW 2.1、pyMSAviz 实时预览和结果导出。"
     },
     {
       "id": "primify.superdecode-adapter",
       "name": "SuperDecode 测序解码",
-      "version": "1.1.0",
+      "version": "1.3.1",
       "author": "Primify",
       "description": "一键安装并启动 SuperDecode Windows 版，也可通过 WSL 运行 DSDecode、HiDecode 与 LaDecode 命令流程。",
       "category": "测序分析",
       "official": true,
-      "min_app_version": "0.1.77",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin",
+      "min_app_version": "0.1.81",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.1/primify-superdecode-adapter-1.3.1.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/superdecode-adapter-v1.1.0/primify-superdecode-adapter-1.1.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.1/primify-superdecode-adapter-1.3.1.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.3.1/primify-superdecode-adapter-1.3.1.primify-plugin"
       ],
-      "sha256": "1638e336c6df7ca175261432f1199a684ad7f12b812a6d9674cd1711c98ed98e",
-      "size": 46654,
-      "published_at": "2026-07-23",
-      "release_notes": "新增 Windows 一键安装、断点续传、固定哈希校验和自动配置；安装后可直接启动官方界面，WSL 命令流程继续作为高级模式。"
+      "sha256": "a3337ae2ff0bf5dbb14e12734bb59244feffd3abc925dfc4e003e1b370450def",
+      "size": 152889902,
+      "published_at": "2026-07-30",
+      "release_notes": "修复运行包校验失败：更正 JD 下载地址，隔离各下载源的断点文件，并拒绝网页响应与无效 Content-Range，防止跨源拼接污染。"
     }
   ]
 }
