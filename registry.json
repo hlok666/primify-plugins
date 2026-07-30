@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-30T04:58:27Z",
+  "updated_at": "2026-07-30T07:04:53Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -101,22 +101,22 @@
     {
       "id": "primify.superdecode-adapter",
       "name": "SuperDecode 测序解码",
-      "version": "1.3.2",
+      "version": "1.3.3",
       "author": "Primify",
       "description": "一键安装并启动 SuperDecode Windows 版，也可通过 WSL 运行 DSDecode、HiDecode 与 LaDecode 命令流程。",
       "category": "测序分析",
       "official": true,
       "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.2/primify-superdecode-adapter-1.3.2.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.2/primify-superdecode-adapter-1.3.2.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/raw/master/dist/superdecode-adapter-v1.3.2/primify-superdecode-adapter-1.3.2.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.3.2/primify-superdecode-adapter-1.3.2.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/raw/master/dist/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
+        "https://raw.githubusercontent.com/hlok666/primify-plugins/main/dist/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin"
       ],
-      "sha256": "6a68e54e4a55746651dab32674108db95a386b10a78139d610ff8d265ca085a7",
-      "size": 48077,
+      "sha256": "427f04a7a81e724ac02acf82e2c2ed2bd8dbf817757c985ebe3a13e02b421888",
+      "size": 48125,
       "published_at": "2026-07-30",
-      "release_notes": "修复插件安装超时：在线插件包改为轻量适配器，安装后由专用下载器获取运行组件，并保留多源回退、断点续传和 SHA-256 校验。"
+      "release_notes": "修复安装后一直显示正在检查 SuperDecode：兼容 Primify 插件宿主的加载方式，并继续使用轻量插件包、断点续传和多源运行组件下载。"
     }
   ]
 }
