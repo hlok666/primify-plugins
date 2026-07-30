@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-30T07:04:53Z",
+  "updated_at": "2026-07-30T15:23:50Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -43,80 +43,142 @@
     {
       "id": "primify.chromatogram",
       "name": "测序峰图查看器",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Primify",
       "description": "读取 ABI/AB1 测序结果或压缩包，显示四通道峰图、碱基、质量值并导出序列。",
       "category": "测序分析",
       "official": true,
       "min_app_version": "0.1.76",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/chromatogram-v1.0.1/primify-chromatogram-1.0.1.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/chromatogram-v1.0.0/primify-chromatogram-1.0.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/chromatogram-v1.0.1/primify-chromatogram-1.0.1.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/chromatogram-v1.0.1/primify-chromatogram-1.0.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/chromatogram-v1.0.1/primify-chromatogram-1.0.1.primify-plugin"
       ],
-      "sha256": "c24c2f3fa0c6b524a3429530ac5218cbe5123d48a142a8291dd03469e5017890",
-      "size": 5687,
-      "published_at": "2026-07-23",
+      "sha256": "bac978eb2ea00e4fa230428060871a5be11157d32ce03f9a9135e126892cdb2f",
+      "size": 5782,
+      "published_at": "2026-07-30",
       "release_notes": "支持 ABI/AB1 批量读取、四通道峰图、碱基与质量显示、有效区间和 FASTA 导出。"
     },
     {
       "id": "primify.fasta-merge",
       "name": "FASTA 合并与命名",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Primify",
       "description": "批量读取 FASTA 或压缩包，检查序列名称，批量重命名并导出合并文件。",
       "category": "序列工具",
       "official": true,
       "min_app_version": "0.1.76",
-      "download_url": "https://github.com/hlok666/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/fasta-merge-v1.0.1/primify-fasta-merge-1.0.1.primify-plugin",
       "download_urls": [
-        "https://github.com/hlok666/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/fasta-merge-v1.0.0/primify-fasta-merge-1.0.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/fasta-merge-v1.0.1/primify-fasta-merge-1.0.1.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/fasta-merge-v1.0.1/primify-fasta-merge-1.0.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/fasta-merge-v1.0.1/primify-fasta-merge-1.0.1.primify-plugin"
       ],
-      "sha256": "b44c495ae42540bbf73f35e5623a6f24090b7a40e4c18a55f173a85e99400956",
-      "size": 5158,
-      "published_at": "2026-07-23",
+      "sha256": "6811188ec0c7572e895b0b43dafe73bd4cad16427a8cb8ab2d01cb7a57fa752a",
+      "size": 5461,
+      "published_at": "2026-07-30",
       "release_notes": "支持批量 FASTA 与压缩包导入、序列筛选、逐条或批量重命名、预览和合并导出。"
     },
     {
       "id": "primify.multiple-alignment",
       "name": "多序列比对与绘图",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": "Primify",
       "description": "使用 ClustalW 2.1 完成多序列比对，并通过 pyMSAviz 实时生成可配置的比对图。",
       "category": "序列分析",
       "official": true,
       "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.1/primify-multiple-alignment-1.2.1.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.2.0/primify-multiple-alignment-1.2.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/multiple-alignment-v1.2.1/primify-multiple-alignment-1.2.1.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/multiple-alignment-v1.2.1/primify-multiple-alignment-1.2.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/multiple-alignment-v1.2.1/primify-multiple-alignment-1.2.1.primify-plugin"
       ],
-      "sha256": "b76692a0ed8a271b00d034bd1acbe6574d2c39b4b47a501ebd97eed7d76b9838",
-      "size": 44290180,
-      "published_at": "2026-07-29",
+      "sha256": "bf1db6b2465a4d989d8a48858e9288ae8aff323ff8a892e948a9db4461f23f57",
+      "size": 44344115,
+      "published_at": "2026-07-30",
       "release_notes": "完整支持 DNA/RNA 与氨基酸比对；压缩包可展开后逐条选择序列，并保留 ClustalW 2.1、pyMSAviz 实时预览和结果导出。"
     },
     {
       "id": "primify.superdecode-adapter",
       "name": "SuperDecode 测序解码",
-      "version": "1.3.3",
+      "version": "1.3.4",
       "author": "Primify",
-      "description": "一键安装并启动 SuperDecode Windows 版，也可通过 WSL 运行 DSDecode、HiDecode 与 LaDecode 命令流程。",
+      "description": "一键安装并启动 SuperDecode Windows 版，在 Primify 内管理测序解码输入与结果。",
       "category": "测序分析",
       "official": true,
       "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.4/primify-superdecode-adapter-1.3.4.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/raw/master/dist/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin",
-        "https://raw.githubusercontent.com/hlok666/primify-plugins/main/dist/superdecode-adapter-v1.3.3/primify-superdecode-adapter-1.3.3.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/superdecode-adapter-v1.3.4/primify-superdecode-adapter-1.3.4.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/superdecode-adapter-v1.3.4/primify-superdecode-adapter-1.3.4.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/superdecode-adapter-v1.3.4/primify-superdecode-adapter-1.3.4.primify-plugin"
       ],
-      "sha256": "427f04a7a81e724ac02acf82e2c2ed2bd8dbf817757c985ebe3a13e02b421888",
-      "size": 48125,
+      "sha256": "8454e8770ce907fa77fa459ab6985c2b2427dbbacde93d788b2a7056a6af7299",
+      "size": 48425,
       "published_at": "2026-07-30",
       "release_notes": "修复安装后一直显示正在检查 SuperDecode：兼容 Primify 插件宿主的加载方式，并继续使用轻量插件包、断点续传和多源运行组件下载。"
+    },
+    {
+      "id": "primify.gene-structure",
+      "name": "基因结构绘制",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "解析 GFF3、GTF、BED/BED12 注释，绘制基因、转录本、外显子、CDS、UTR、内含子和方向。",
+      "category": "基因注释",
+      "official": true,
+      "min_app_version": "0.1.81",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin"
+      ],
+      "sha256": "6f81d0e44d858e20080b7d674f589107fdc5a6a2385dccba1c059d95d1d2aa8c",
+      "size": 10445,
+      "published_at": "2026-07-30",
+      "release_notes": "支持 GFF3/GTF/BED、多基因轨道、正负链方向、相对或绝对坐标，以及 PNG/SVG/PDF/TSV 导出。"
+    },
+    {
+      "id": "primify.phylogenetic-tree",
+      "name": "系统发育树分析",
+      "version": "1.1.0",
+      "author": "Primify",
+      "description": "MAFFT 多序列比对、trimAl 修剪、IQ-TREE 建树与 R 图形化导出。",
+      "category": "进化分析",
+      "official": true,
+      "min_app_version": "0.1.81",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
+      "download_urls": [
+        "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin"
+      ],
+      "sha256": "e520111346f117f19921435fbc2d129d9e9df56f6298b9531a3c3f5ab66b9400",
+      "size": 38031523,
+      "published_at": "2026-07-30",
+      "release_notes": "新增 MAFFT、trimAl、IQ-TREE 受管工具链，支持核酸/蛋白序列建树、实时进度、Newick 与 PNG/SVG/PDF/完整结果导出。"
+    },
+    {
+      "id": "primify.protein-domain",
+      "name": "蛋白质结构域绘制",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "导入蛋白序列与结构域注释，手动编辑区段、颜色和图形，并使用 R/ggplot2 输出出版级图形。",
+      "category": "蛋白分析",
+      "official": true,
+      "min_app_version": "0.1.81",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin"
+      ],
+      "sha256": "5dbd5e505a081153f2ce2fb29914a4dd5e331fde65dd32af90b6d36225ed7ccd",
+      "size": 13021,
+      "published_at": "2026-07-30",
+      "release_notes": "支持结构域手工编辑、多蛋白排版、NCBI CDD 与 InterProScan 在线注释，以及 PNG/SVG/PDF/TSV 导出。"
     }
   ]
 }
