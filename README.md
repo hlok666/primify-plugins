@@ -14,6 +14,10 @@ Primify reads `registry.json`, verifies the package size and SHA-256 digest, the
 - Chromatogram Viewer: ABI/AB1 trace, base call, quality, trimming, and FASTA export.
 - Multiple Alignment: bundled ClustalW 2.1 alignment with configurable pyMSAviz rendering.
 - SuperDecode Adapter: installs the official Windows release from the upstream source on demand, verifies its fixed size and SHA-256 digest, and can also connect to an existing installation. Primify does not redistribute the upstream binary.
+- Phylogenetic Tree: managed MAFFT, trimAl, and IQ-TREE workflow with publication-format exports.
+- Gene Structure: multi-gene GFF3/GTF/BED visualization with editable gggenes-compatible styling.
+- Protein Domain: editable multi-protein domain tracks with CDD and InterPro annotation support.
+- Gene Family Evolution: OrthoFinder-compatible input validation, parsimony preview, and formal CAFE5 expansion/contraction analysis.
 
 ## Security
 

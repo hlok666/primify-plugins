@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-31T01:13:16Z",
+  "updated_at": "2026-07-31T06:51:36Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -179,6 +179,26 @@
       "size": 14147,
       "published_at": "2026-07-31",
       "release_notes": "升级为 gggenes 专业绘图工作台：支持 N-C 方向轨道、结构域形状与颜色编辑、多蛋白排版、CDD/InterPro 注释，以及 PNG/SVG/PDF/TSV 导出。"
+    },
+    {
+      "id": "primify.gene-family-evolution",
+      "name": "基因家族收缩/扩张分析",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "导入 OrthoFinder 或通用家族计数表与有根超度量时间树，完成输入质控、最大简约趋势预览和 CAFE5 正式统计分析。",
+      "category": "比较基因组",
+      "official": true,
+      "min_app_version": "0.1.82",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-family-evolution-v1.0.0/primify-gene-family-evolution-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://gf.xgsx.site/primify-updates/plugins/gene-family-evolution-v1.0.0/primify-gene-family-evolution-1.0.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/gene-family-evolution-v1.0.0/primify-gene-family-evolution-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/gene-family-evolution-v1.0.0/primify-gene-family-evolution-1.0.0.primify-plugin"
+      ],
+      "sha256": "7fe3d69616c1a614c3e1cb947a94df867c3cc1849034fb3ffd85f9238dd6b75f",
+      "size": 1572334,
+      "published_at": "2026-07-31",
+      "release_notes": "新增基因家族收缩/扩张分析工作台：支持 OrthoFinder/通用计数表、时间树与物种校验、最大简约趋势预览、CAFE5 正式统计、多次运行收敛诊断和完整结果导出。"
     }
   ]
 }
