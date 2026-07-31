@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-30T15:23:50Z",
+  "updated_at": "2026-07-31T01:13:16Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -123,62 +123,62 @@
     {
       "id": "primify.gene-structure",
       "name": "基因结构绘制",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": "Primify",
-      "description": "解析 GFF3、GTF、BED/BED12 注释，绘制基因、转录本、外显子、CDS、UTR、内含子和方向。",
+      "description": "解析 GFF3、GTF、BED/BED12 注释，使用 R/gggenes 绘制基因、转录本、外显子、CDS、UTR、内含子和方向。",
       "category": "基因注释",
       "official": true,
-      "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
+      "min_app_version": "0.1.82",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.1.0/primify-gene-structure-1.1.0.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/gene-structure-v1.0.0/primify-gene-structure-1.0.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/gene-structure-v1.1.0/primify-gene-structure-1.1.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/gene-structure-v1.1.0/primify-gene-structure-1.1.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/gene-structure-v1.1.0/primify-gene-structure-1.1.0.primify-plugin"
       ],
-      "sha256": "6f81d0e44d858e20080b7d674f589107fdc5a6a2385dccba1c059d95d1d2aa8c",
-      "size": 10445,
-      "published_at": "2026-07-30",
-      "release_notes": "支持 GFF3/GTF/BED、多基因轨道、正负链方向、相对或绝对坐标，以及 PNG/SVG/PDF/TSV 导出。"
+      "sha256": "73952daaaafd20c90d03b4f2743e961df82284aa98ec8987fe881c5c4e3de95e",
+      "size": 11979,
+      "published_at": "2026-07-31",
+      "release_notes": "升级为 gggenes 专业绘图工作台：支持 GFF3/GTF/BED、多基因正负链轨道、外显子/CDS/UTR/内含子、相对或绝对坐标，以及 PNG/SVG/PDF/TSV 导出。"
     },
     {
       "id": "primify.phylogenetic-tree",
       "name": "系统发育树分析",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": "Primify",
       "description": "MAFFT 多序列比对、trimAl 修剪、IQ-TREE 建树与 R 图形化导出。",
       "category": "进化分析",
       "official": true,
       "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.1/primify-phylogenetic-tree-1.1.1.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/phylogenetic-tree-v1.1.0/primify-phylogenetic-tree-1.1.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/phylogenetic-tree-v1.1.1/primify-phylogenetic-tree-1.1.1.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/phylogenetic-tree-v1.1.1/primify-phylogenetic-tree-1.1.1.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/phylogenetic-tree-v1.1.1/primify-phylogenetic-tree-1.1.1.primify-plugin"
       ],
-      "sha256": "e520111346f117f19921435fbc2d129d9e9df56f6298b9531a3c3f5ab66b9400",
-      "size": 38031523,
-      "published_at": "2026-07-30",
+      "sha256": "fd297ee3fbdd1327a9311f61113bb4ef11fb2cc78c3e3a4a5c234f42356145bc",
+      "size": 37956283,
+      "published_at": "2026-07-31",
       "release_notes": "新增 MAFFT、trimAl、IQ-TREE 受管工具链，支持核酸/蛋白序列建树、实时进度、Newick 与 PNG/SVG/PDF/完整结果导出。"
     },
     {
       "id": "primify.protein-domain",
       "name": "蛋白质结构域绘制",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": "Primify",
-      "description": "导入蛋白序列与结构域注释，手动编辑区段、颜色和图形，并使用 R/ggplot2 输出出版级图形。",
+      "description": "导入蛋白序列与结构域注释，手动编辑区段、颜色和图形，并使用 R/gggenes 输出出版级图形。",
       "category": "蛋白分析",
       "official": true,
-      "min_app_version": "0.1.81",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
+      "min_app_version": "0.1.82",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.1.0/primify-protein-domain-1.1.0.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/protein-domain-v1.0.0/primify-protein-domain-1.0.0.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/protein-domain-v1.1.0/primify-protein-domain-1.1.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/protein-domain-v1.1.0/primify-protein-domain-1.1.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/protein-domain-v1.1.0/primify-protein-domain-1.1.0.primify-plugin"
       ],
-      "sha256": "5dbd5e505a081153f2ce2fb29914a4dd5e331fde65dd32af90b6d36225ed7ccd",
-      "size": 13021,
-      "published_at": "2026-07-30",
-      "release_notes": "支持结构域手工编辑、多蛋白排版、NCBI CDD 与 InterProScan 在线注释，以及 PNG/SVG/PDF/TSV 导出。"
+      "sha256": "c63dcb8491818e19d1d1b940904b9f16f2be3f2dc99d3cfce343f6850fd88e2a",
+      "size": 14147,
+      "published_at": "2026-07-31",
+      "release_notes": "升级为 gggenes 专业绘图工作台：支持 N-C 方向轨道、结构域形状与颜色编辑、多蛋白排版、CDD/InterPro 注释，以及 PNG/SVG/PDF/TSV 导出。"
     }
   ]
 }
