@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-18T13:45:03.3773003Z",
+  "updated_at": "2026-11-18T14:14:04.5501684Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -183,22 +183,22 @@
     {
       "id": "primify.gene-region-extractor",
       "name": "基因区段提取",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": "Primify",
       "description": "从本地参考基因组批量提取上下游、CDS、UTR、转录本、外显子和内含子；支持正负链、转录本选择与坐标审计。",
       "category": "序列工具",
       "official": true,
       "min_app_version": "0.1.88",
-      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.1/primify-gene-region-extractor-1.0.1.primify-plugin",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.2/primify-gene-region-extractor-1.0.2.primify-plugin",
       "download_urls": [
-        "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.1/primify-gene-region-extractor-1.0.1.primify-plugin",
-        "https://github.com/hlok666/primify-plugins/releases/download/gene-region-extractor-v1.0.1/primify-gene-region-extractor-1.0.1.primify-plugin",
-        "https://gitee.com/ryone/primify-plugins/releases/download/gene-region-extractor-v1.0.1/primify-gene-region-extractor-1.0.1.primify-plugin"
+        "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.2/primify-gene-region-extractor-1.0.2.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/gene-region-extractor-v1.0.2/primify-gene-region-extractor-1.0.2.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/gene-region-extractor-v1.0.2/primify-gene-region-extractor-1.0.2.primify-plugin"
       ],
-      "sha256": "65bd6bbe5bd0d1a2f9422fc3e0aeee83411e540b1c47955f2dca9803ea76f4ff",
-      "size": 28572,
+      "sha256": "c3b718df6e9ecd8c58c8c358f7532f2b238b7f4522a2b30447104cd37c5e7572",
+      "size": 29913,
       "published_at": "2026-11-18",
-      "release_notes": "修复插件沙箱中检索按钮无反应：新增输入候选、回车检索、等待与错误提示，并修复清空确认按钮。支持九类基因区段批量提取、正负链及 FASTA/坐标报告导出。",
+      "release_notes": "序列预览新增“复制序列”和“复制 FASTA”，一键复制当前结果的完整序列，不受预览分页限制；使用桌面剪贴板并显示复制反馈。保留检索修复和九类区段批量提取。",
       "sources_verified": true
     }
   ]
