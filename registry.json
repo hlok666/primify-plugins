@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-07-31T08:58:18Z",
+  "updated_at": "2026-11-18T13:34:03.8219820Z",
   "plugins": [
     {
       "id": "primify.sequence-blast",
@@ -179,6 +179,27 @@
       "size": 14147,
       "published_at": "2026-07-31",
       "release_notes": "升级为 gggenes 专业绘图工作台：支持 N-C 方向轨道、结构域形状与颜色编辑、多蛋白排版、CDD/InterPro 注释，以及 PNG/SVG/PDF/TSV 导出。"
+    },
+    {
+      "id": "primify.gene-region-extractor",
+      "name": "基因区段提取",
+      "version": "1.0.0",
+      "author": "Primify",
+      "description": "从本地参考基因组批量提取上下游、CDS、UTR、转录本、外显子和内含子；支持正负链、转录本选择与坐标审计。",
+      "category": "序列工具",
+      "official": true,
+      "min_app_version": "0.1.88",
+      "download_url": "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.0/primify-gene-region-extractor-1.0.0.primify-plugin",
+      "download_urls": [
+        "https://gf.xgsx.site/primify-updates/plugins/gene-region-extractor-v1.0.0/primify-gene-region-extractor-1.0.0.primify-plugin",
+        "https://github.com/hlok666/primify-plugins/releases/download/gene-region-extractor-v1.0.0/primify-gene-region-extractor-1.0.0.primify-plugin",
+        "https://gitee.com/ryone/primify-plugins/releases/download/gene-region-extractor-v1.0.0/primify-gene-region-extractor-1.0.0.primify-plugin"
+      ],
+      "sha256": "f97d0993044aa9b90e184adef297b5832123a37fb6af8f86a5470806d4454a0d",
+      "size": 27962,
+      "published_at": "2026-11-18",
+      "release_notes": "批量提取参考基因的上下游、CDS、UTR、转录本、外显子和内含子；支持转录本选择、正负链、FASTA 与坐标报告。",
+      "sources_verified": true
     }
   ]
 }
